@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radit-Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <section class="logo-icon">
+        </section>
+        <div class="logo-title">
+            <p>RADITLORA</p>
+        </div>
+        <section class="nav-container">
+            <ul>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-package">
+                        Our Pages
+                    </a>
+                </li>
+                <li>
+                    <a href="#call-us">
+                        Call Us
+                    </a>
+                </li>
+            </ul>
+        </section>        
+        
+    </header>
+    <hr>
+    <section class="section-container">
+        <header>
+            <h1>Hi "<span id="name">User</span>"! <br> Welcome to RADITLORA</h1>
+            <p>Hidupkan kebutuhan fashion mu di sini!</p>
+        </header>
+
+        <div id="home" class="section-content-container">
+
+            <article class="left-content">
+                <div class="slide-show">
+                    <img class="left-content-img" src="assets/2.jpg" alt="slide">
+                    <img class="left-content-img" src="assets/3.jpg " alt="slide">
+                    <img class="left-content-img" src="assets/4.jpg " alt="slide">
+
+                    <button class="slide-btn" onclick="nextSlide(1)"><b>Next Slide</b></button>
+                </div>
+                
+                <div class="personal-detail-content">
+                     <figcaption><i>"Bagus banget, bahan nya ga murahan"</i></figcaption>
+                    <div class="profile-content">
+                        <div class="circle-list-content">
+                            <div class="left-profile-icon-description">
+                              <div class="left-profile-icon"></div>
+                              <div class="feature-content">
+                                <span style="font-size: 1.2rem;"><b>Radithya Mahesa</b></span><br>
+                                Costumer
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="left-feature-content">
+                    <header>
+                        <h4>3 Alasan kenapa kamu harus memenuhi kebutuhan fashion kamu di sini!</h4>                       
+                    </header>
+                    <div class="circle-list-content">
+                        <div class="circle-list">
+                          <div class="number-list">1</div>
+                          <div class="feature-content">Perancang kami berasal dari lulusan terbaik Oxford University</div>
+                        </div>
+                        <div class="circle-list">
+                          <div class="number-list">2</div>
+                          <div class="feature-content">Kompensasi senilai 10% dari harga produk jika barang tidak sesuai</div>
+                        </div>
+                        <div class="circle-list">
+                          <div class="number-list">3</div>
+                          <div class="feature-content">Admin terlalu Fast Response (ga pernah nyentuh rumput)</div>
+                        </div>
+                      </div>
+                </div>
+            </article>
+
+            <article class="right-content">
+                <div class="right-content-description">
+                    <h1>Login</h1>
+                    <p>Please login to Your personal account</p>
+                </div>
+                <form class="form-container" onsubmit="return validateForm()">
+                    <label>Username:</label><br>
+                    <input type="text" class="name-input" placeholder="Your username" name="name-input">                
+                    <label>Password:</label><br>
+                    <input type="password" class="pass-input" placeholder="Your password" name="pass-input">                    
+                    <label>Confirm password:</label><br>
+                    <input type="password" class="conf-input" placeholder="Confirm Your password" name="conf-input">                    
+                    <div id="warning-message" style="color: red; display: none;">Terdapat masalah!</div><br>
+                    
+                    <button type="submit" class="input-btn"><b>Login</b></button><br>
+                    <p>Don't Have an Accouunt? 
+                        <a href="#" style="text-decoration: none; color: #2475ED;">Create one</a>
+                    </p>
+                </form>
+
+            </article>
+        </div>
+
+    </section>
+
+    <footer class="footer-container">
+        <h3 style="font-family: 'Courier New', Courier, monospace; margin-bottom: 2.5rem; font-size: 4vh;"><b>Visit Indonesia</b></h3>
+        <div class="link-footer">
+            <a href="#">Term of service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p style="color: #ddd;">&#169;2024, Radithya Mahesa</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

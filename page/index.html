@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radit-Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <header class="header-container">
+        <section class="logo-icon">
+        </section>
+        <div class="logo-title">
+            <p>RADITLORA</p>
+        </div>
+        <section class="nav-container">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-package">
+                        Our Pages
+                    </a>
+                </li>
+                <li>
+                    <a href="#call-us">
+                        Call Us
+                    </a>
+                </li>
+            </ul>
+        </section>        
+        
+    </header>
+    <hr>
+    <section class="section-container">
+        <header>
+            <h1>Hi "<span id="name">User</span>"! <br> Welcome to RADITLORA</h1>
+            <p>Hidupkan kebutuhan fashion mu di sini!</p>
+        </header>
+
+        <section id="our-package" class="section-package">
+            <div id="our-packages" class="section-package">
+                <header>
+                    <h2 style="font-size: 2rem;">CATALOG</h2>
+                </header>
+            </div>
+        </section>
+    
+        <section class="section-card-container">
+            <div class="top-row">
+                <div class="card">
+                    <img src="../assets/2.jpg" class="card-img" id="card1">
+                    <h2>black/white t-shirt</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card1', 43.99)"><b>&#36 43,99</b></button><br>
+                </div>
+                <div class="card">
+                    <img src="../assets/3.jpg" class="card-img" id="card2">
+                    <h2>blue wave jeans</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card2', 39.99)"><b>&#36 39,99</b></button><br>
+                </div>
+                <div class="card">
+                    <img src="../assets/4.jpg" class="card-img" id="card3">
+                    <h2>white doff hijab</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card3', 21.99)"><b>&#36 21,99</b></button><br>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="card">
+                    <img src="../assets/5.jpg" class="card-img" id="card4">
+                    <h2>ultras yellow hoodie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card4', 50.99)"><b>&#36 50,99</b></button><br>
+                </div>
+                <div class="card">
+                    <img src="../assets/6.jpg" class="card-img" id="card5">
+                    <h2>green mint sweater</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card5', 60.99)"><b>&#36 60,99</b></button><br>
+                </div>
+                <div class="card">
+                    <img src="../assets/7.jpg" class="card-img" id="card6">
+                    <h2>Formal Suit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis laboriosam corporis.</p>
+                    <button type="submit" class="input-btn" onclick="openPopup('card6', 99.99)"><b>&#36 99,99</b></button><br>
+                </div>
+            </div>
+        </section>
+        
+        <div id="overlay" class="overlay"></div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h5>Konfirmasi Pembayaran</h5>
+                <hr>
+                <form class="popup-form">
+                    <label>Card Number:</label><br>
+                    <input type="number" class="numb-input" placeholder="1234 5678 9101 1121" name="numb-input">                
+                    <label>Expiration Date:</label><br>
+                    <input type="number" class="numb-input" placeholder="MM/YY" name="numb-input">                    
+                    <label>CVV:</label><br>
+                    <input type="number" class="numb-input" placeholder="123" name="numb-input">                    
+                    <button type="submit" class="input-btn" id="confirm-button"><b></b></button><br>
+                </form>
+            </div>
+        </div>
+
+        <hr style="margin: 0 5rem;">
+
+        <section class="end-section-container" id="call-us">
+            <header class="close-headline">
+                <h2>About Us</h2>
+            </header>
+            <div class="close-headline-title">
+                <table>
+                    <tr>
+                        <td>
+                            <b>Alamat </b> Jl. Lorem Ipsum No 221, Kab. Dolor sit amet, Kec. Adipising elit, Kota Bandung, Jawa Barat
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Telepon </b> (022) 5245532
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Provinsi </b> Jawa barat</td>
+                    </tr>
+                </table>
+                <div>
+                    <a href="#" style="
+                        outline: none;
+                        text-decoration: none;">
+                        <button class="about-btn">
+                            <b>LinkedIn</b>
+                        </button>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+    
+    </section>
+
+    <footer class="footer-container">
+        <h3 style="font-family: 'Courier New', Courier, monospace; margin-bottom: 2.5rem; font-size: 4vh;"><b>RADITLORA</b></h3>
+        <div class="link-footer">
+            <a href="#">Term of service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p style="color: #ddd;">&#169;2024, Radithya Mahesa</p>
+    </footer>
+    <script src="../js/popup.js"></script>
+</body>
+</html>
+
