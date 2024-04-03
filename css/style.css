@@ -178,8 +178,6 @@ hr {
     margin-left: 10px;
     font-size: 16px;
 }
-  
-
 
 .right-content {
     text-align: justify;
@@ -223,29 +221,6 @@ label {
    margin-top: 5px;
    margin-bottom: 40px;
 
-}
-
-select {
-    color: #a0acc4;
-}
-
-option:not(:first-of-type) {
-    color: black;
-}
-
-::-webkit-input-placeholder {
-    color:    #a0acc4;
-}
-:-moz-placeholder {
-   color:    #a0acc4;
-   opacity:  1;
-}
-::-moz-placeholder { 
-   color:    #a0acc4;
-   opacity:  1;
-}
-:-ms-input-placeholder { 
-   color:    #a0acc4;
 }
 
 .input-btn {
